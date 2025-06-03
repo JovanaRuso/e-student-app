@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="mk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Регистрација – е-Студент</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container d-flex justify-content-center">
+    <div class="login-container">
+      <h3 class="text-center mb-4">Регистрација</h3>
+      <form>
+        <div class="mb-3">
+          <label for="firstName" class="form-label">Име</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Јована" required>
+        </div>
+        <div class="mb-3">
+          <label for="lastName" class="form-label">Презиме</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Русомаровска" required>
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Е-пошта</label>
+          <input type="email" class="form-control" id="email" placeholder="korisnik@example.com" required>
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Лозинка</label>
+          <input type="password" class="form-control" id="password" required>
+        </div>
+        <div class="mb-3">
+          <label for="confirmPassword" class="form-label">Потврди лозинка</label>
+          <input type="password" class="form-control" id="confirmPassword" required>
+        </div>
+        <div class="mb-3">
+          <label for="userType" class="form-label">Тип на корисник</label>
+          <select class="form-select" id="userType" required>
+            <option value="" disabled selected>Одбери</option>
+            <option value="student">Студент</option>
+            <option value="professor">Професор</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Регистрирај се</button>
+      </form>
+      <div class="text-center mt-3">
+        <small>Веќе имаш профил? <a href="login.html">Најави се</a></small>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
